@@ -6,11 +6,18 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
   const currentNavbarBalance = getValueById('navBarBalance')
 
+  if(isNaN(donatedMoney)){
+    alert('Failed to donate money.');
+    return;
+  }
+
   const newBalance = currentBalance + donatedMoney;
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
   document.getElementById('navBarBalance').innerText = newNavbarBalance;
   document.getElementById('donated-current-balance').innerText = newBalance;
   alert(`You donated ${donatedMoney} BDT`);
+
+  
 })
 
 
@@ -21,6 +28,11 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
   const currentBalance = getValueById('donated-current-balance-feni');
 
   const currentNavbarBalance = getValueById('navBarBalance')
+
+  if(isNaN(donatedMoney)){
+    alert('Failed to donate money.');
+    return;
+  }
 
   const newBalance = currentBalance + donatedMoney;
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
@@ -37,6 +49,11 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
   const currentBalance = getValueById('donated-current-balance-quota');
 
   const currentNavbarBalance = getValueById('navBarBalance')
+
+  if(isNaN(donatedMoney)){
+    alert('Failed to donate money.');
+    return;
+  }
 
   const newBalance = currentBalance + donatedMoney;
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
