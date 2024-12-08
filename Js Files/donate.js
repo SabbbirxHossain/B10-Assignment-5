@@ -10,6 +10,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
   document.getElementById('navBarBalance').innerText = newNavbarBalance;
   document.getElementById('donated-current-balance').innerText = newBalance;
+  alert(`You donated ${donatedMoney} BDT`);
 })
 
 
@@ -25,6 +26,7 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
   document.getElementById('navBarBalance').innerText = newNavbarBalance;
   document.getElementById('donated-current-balance-feni').innerText = newBalance;
+  alert(`You donated ${donatedMoney} BDT`);
 })
 
 
@@ -40,4 +42,5 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
   const newNavbarBalance = currentNavbarBalance - donatedMoney;
   document.getElementById('navBarBalance').innerText = newNavbarBalance;
   document.getElementById('donated-current-balance-quota').innerText = newBalance;
+  alert(`You donated ${donatedMoney} BDT`);
 })
